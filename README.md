@@ -10,22 +10,22 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/beckpull/pwa-text-editor">
+  <a href="https://github.com/beckpull/portfolio">
 
 
 
-<h1 align="center">Text Editor: A Progressive Web Application</h1>
+<h1 align="center">My Portfolio</h1>
 
-  <p align="center">Express PWA repository—a cutting-edge text editor application leveraging the power of Progressive Web App technology.
+  <p align="center">React Portfolio Repository—A comprehensive showcase of my work, skills, and achievements. Harnessing the capabilities of React to create an engaging and professional online presence.
     <br />
-    <a href="https://github.com/beckpull/pwa-text-editor"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/beckpull/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="#">View Webpage</a>
     ·
-    <a href="https://github.com/beckpull/pwa-text-editor/issues">Report Bug</a>
+    <a href="https://github.com/beckpull/portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/beckpull/pwa-text-editor/issues">Request Feature</a>
+    <a href="https://github.com/beckpull/portfolio/issues">Request Feature</a>
   </p>
 </div>
 
@@ -64,25 +64,25 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Overview
-The Text Editor Progressive Web Application (PWA) is a modern text editing tool that harnesses the capabilities of Progressive Web App technology. It offers users a seamless and responsive editing experience across various devices and platforms.
 
-Key Features
-Progressive Web App (PWA): Utilizes the latest web technologies to deliver an app-like experience, enabling users to install and use the text editor directly from their web browsers.
-Express Backend: Employs Express.js for the backend, providing a robust and efficient server framework for handling HTTP requests and serving the application's resources.
-Real-time Collaboration: Implements real-time collaboration features, allowing multiple users to edit the same document simultaneously with instant updates.
-Offline Support: Utilizes service workers to enable offline functionality, ensuring users can continue editing their documents even when they're not connected to the internet.
-Customizable Themes: Offers a range of customizable themes and styling options, allowing users to personalize their editing environment according to their preferences.
-Rich Text Editing: Provides a feature-rich text editing experience with support for formatting, syntax highlighting, code completion, and more.
-Cloud Storage Integration: Integrates with cloud storage services (e.g., Google Drive, Dropbox) to allow users to seamlessly save and sync their documents across devices.
-Technologies Used
-Frontend: HTML, CSS, JavaScript (possibly with frameworks like React or Vue.js)
-Backend: Node.js with Express.js
-Data Storage: MongoDB for storing user preferences, documents metadata, and collaborative editing data
-Progressive Web App: Utilizes service workers, Web App Manifest, and other PWA features for enhanced performance and user experience
-Goals
-The primary goal of the Text Editor PWA project is to develop a feature-rich and user-friendly text editing application that leverages the capabilities of Progressive Web App technology. It aims to provide users with a seamless editing experience, whether they're online or offline, while also offering collaborative editing features and integration with popular cloud storage services.
+Overview:
+The React Portfolio project is a comprehensive showcase of my work, skills, and achievements, crafted with the latest web technologies. It provides a professional online presence for users to explore my portfolio and learn more about my capabilities.
 
+Key Features:
+
+Responsive Design: Ensures optimal viewing experience across various devices and screen sizes.
+Interactive Interface: Engages users with intuitive navigation and interactive elements.
+Project Showcase: Highlights my projects, including descriptions, technologies used, and links to live demos or repositories.
+Skills Section: Showcases my technical skills and proficiencies relevant to web development.
+About Me Page: Provides insight into my background, experience, and interests.
+Contact Form: Enables visitors to reach out to me directly for inquiries or collaborations.
+Technologies Used:
+
+Frontend: React.js, HTML, CSS
+Backend: (Optional, if applicable)
+Deployment: (Hosting platform, e.g., Netlify, Vercel)
+Goals:
+The primary goal of the React Portfolio project is to create a professional and visually appealing platform to showcase my work and skills to potential employers, clients, and collaborators. It aims to demonstrate my proficiency in web development while providing an interactive and informative experience for visitors.
 **Key Features**:
 
 
@@ -94,7 +94,7 @@ The primary goal of the Text Editor PWA project is to develop a feature-rich and
 
 ### Built With
 
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+<!-- * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![NodeJS]
 * ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
@@ -105,7 +105,7 @@ The primary goal of the Text Editor PWA project is to develop a feature-rich and
 * ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 * ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 * ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,9 +115,9 @@ The primary goal of the Text Editor PWA project is to develop a feature-rich and
 
 <p align="center"><i><strong>✨ Everything you need to know ✨</strong></i></p>
 
-### Prerequisites
+<!-- ### Prerequisites
 
-_This application has several dependencies, to install individually onto your machine, navigate to the directory this code lives in and type these commands into your Terminal / Git Bash:_
+_This application has several dependencies, to install individually onto your machine, navigate to the directory this code lives in and type these commands into your Terminal / Git Bash:_ -->
   ```sh
 #   npm i express
 #   npm i mongodb
@@ -125,19 +125,19 @@ _This application has several dependencies, to install individually onto your ma
 #   npm i nodemon --save-dev
   ```
 
-### Installation
+<!-- ### Installation
 
 _To get a local copy up and running follow these simple example steps:_
 
 1. Clone the repo
    ```sh
-   HTTP: git clone https://github.com/beckpull/pwa-text-editor.git
-   SSH: git clone git@github.com:beckpull/pwa-text-editor.git
+   HTTP: git clone https://github.com/beckpull/portfolio.git
+   SSH: git clone git@github.com:beckpull/portfolio.git
    ```
 2. Install all necessary NPM packages
    ```sh
    npm i && npm run start:dev
-   ```
+   ``` -->
 <!-- 3. Node `server.js`
    ```sh
    npm start
@@ -153,28 +153,28 @@ _To get a local copy up and running follow these simple example steps:_
   <img src="./assets/qr.png" width="200" alt="qr code for demo video">
   </br>
   </br>
-  <strong><i>Scan the QR code above or click <strong><a href="#">HERE</a></strong> to view this deployed site on Render</strong>
+  <strong><i>Scan the QR code above or click <strong><a href="#">HERE</a></strong> to view this deployed site on Netlify!</strong>
     </br>
     </br>
     </br>
-    <!-- <a href="https://github.com/beckpull/pwa-text-editor">
+    <!-- <a href="https://github.com/beckpull/portfolio">
     <p>/api/users</p>
       <img src="./assets/users1.png" width="300">
       <img src="./assets/users2.png" width="300">
       <img src="./assets/users3.png" width="523">
     </a>
     </br></br>
-    <a href="https://github.com/beckpull/pwa-text-editor">
+    <a href="https://github.com/beckpull/portfolio">
       <p>/api/users/:userId/friends/:friendId</p>
       <img src="./assets/friendsPOST.png" width="605">
       <img src="./assets/friendsDELETE.png" width="647">
     </a>
     </br></br>
-    <a href="https://github.com/beckpull/pwa-text-editor">
+    <a href="https://github.com/beckpull/portfolio">
       <p>/api/thoughts</p>
       <img src="./assets/thoughts.png" width="700">
     </a>
-    <a href="https://github.com/beckpull/pwa-text-editor">
+    <a href="https://github.com/beckpull/portfolio">
       <p>/api/thoughts/:thoughtId/</p>
       <img src="./assets/singleThought.png" width="700">
       <img src="./assets/singleThought2.png" width="500">
@@ -193,35 +193,35 @@ _To get a local copy up and running follow these simple example steps:_
 </div>
 </br>
 
-<!-- AS A developer
-I WANT to create notes or code snippets with or without an internet connection
-SO THAT I can reliably retrieve them for later use -->
+<!-- AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position -->
 
-<!-- GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Render
-THEN I should have proper build scripts for a webpack application -->
+<!-- GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,7 +239,7 @@ Don't forget to give the project a star! Thanks again!_
 4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
-See the [open issues](https://github.com/beckpull/pwa-text-editor/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/beckpull/portfolio/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -256,7 +256,7 @@ See the [open issues](https://github.com/beckpull/pwa-text-editor/issues) for a 
 
 **Rebecca Feltman** - [Email me](mailto:beckpull@icloud.com) - or check me out on [GitHub!](https://github.com/beckpull) 
 
->Repository Link: [https://github.com/beckpull/pwa-text-editor](https://github.com/beckpull/pwa-text-editor)
+>Repository Link: [https://github.com/beckpull/portfolio](https://github.com/beckpull/portfolio)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -276,16 +276,16 @@ See the [open issues](https://github.com/beckpull/pwa-text-editor/issues) for a 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/beckpull/pwa-text-editor.svg?style=for-the-badge
-[contributors-url]: https://github.com/beckpull/pwa-text-editor/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/beckpull/pwa-text-editor.svg?style=for-the-badge
-[forks-url]: https://github.com/beckpull/pwa-text-editor/network/members
-[stars-shield]: https://img.shields.io/github/stars/beckpull/pwa-text-editor.svg?style=for-the-badge
-[stars-url]: https://github.com/beckpull/pwa-text-editor/stargazers
-[issues-shield]: https://img.shields.io/github/issues/beckpull/pwa-text-editor.svg?style=for-the-badge
-[issues-url]: https://github.com/beckpull/pwa-text-editor/issues
-[license-shield]: https://img.shields.io/github/license/beckpull/pwa-text-editor.svg?style=for-the-badge
-[license-url]: https://github.com/beckpull/pwa-text-editor/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/beckpull/portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/beckpull/portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/beckpull/portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/beckpull/portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/beckpull/portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/beckpull/portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/beckpull/portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/beckpull/portfolio/issues
+[license-shield]: https://img.shields.io/github/license/beckpull/portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/beckpull/portfolio/blob/main/LICENSE
 [product-screenshot]: images/screenshot.png
 [NodeJS]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en
