@@ -21,7 +21,7 @@ const contactSchema = new Schema(
       unique: true
     },
     message: {
-      type: Text,
+      type: String,
       required: [true, "message required"],
       trim: true
     },
