@@ -3,42 +3,6 @@ import mongoose from 'mongoose';
 import Grid from 'gridfs-stream';
 import BlogPost from '../models/BlogPost.mjs';
 
-// Initialize GridFS stream
-let gfs;
-const conn = mongoose.connection;
-conn.once('open', () => {
-  gfs = Grid(conn.db, mongoose.mongo);
-  gfs.collection('uploads');
-});
-
-// Function to upload a file to GridFS
-function uploadFile(filename) {
-  const writestream = gfs.createWriteStream({
-    filename: filename
-  });
-  fs.createReadStream(filename).pipe(writestream);
-  return new Promise((resolve, reject) => {
-    writestream.on('close', (file) => {
-      resolve(file._id);
-    });
-    writestream.on('error', (error) => {
-      reject(error);
-    });
-  });
-}
-
-// Controller function to create a blog post
-export const createBlogPost = async (req, res) => {
-  try {
-    const { title, content, files } = req.body;
-    const fileIds = await Promise.all(files.map(uploadFile));
-    const blogPost = new BlogPost({ title, content, files: fileIds });
-    await blogPost.save();
-    res.status(201).json({ message: 'Blog post created successfully' });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-};
 
 // Controller function to fetch all blog posts
 export const getAllBlogPosts = async (req, res) => {

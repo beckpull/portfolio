@@ -3,12 +3,12 @@ const router = express.Router();
 import { 
     getAllContacts, 
     getContactById, 
-    submitContactForm, 
+    createContact, 
     updateContactById, 
     deleteContactById, 
 } from '../controllers/contactController.mjs';
 
-router.route('/').get(getAllContacts).post(submitContactForm);
+router.route('/').get(getAllContacts).post(createContact);
 router.route('/:contactId').get(getContactById).put(updateContactById).delete(deleteContactById);
 
 router.use((req, res) => {

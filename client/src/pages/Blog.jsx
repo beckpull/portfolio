@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-class Blog extends Component {}
+const BlogPosts = () => {
 
-export default Blog;
+  return 
+};
 
+export default BlogPosts;

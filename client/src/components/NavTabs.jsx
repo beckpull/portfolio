@@ -1,58 +1,36 @@
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function NavTabs() {
   const currentPage = useLocation().pathname;
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
 
   return (
-    <nav className="navbar navbar-end" id="nav">
-      <a className="navbar-item">
-        <Link
-          to="/"
-          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/' ? 'navbar-link is-active' : 'navbar-link'}
-        >
-          About Me
-        </Link>
-      </a>
-      <a className="navbar-item">
-        <Link
-          to="/Blog"
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Blog' ? 'navbar-link is-active' : 'navbar-link'}
-        >
-          Tech Blog
-        </Link>
-      </a>
-      <a className="navbar-item">
-        <Link
-          to="/Projects"
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Projects' ? 'navbar-link is-active' : 'navbar-link'}
-        >
-          Projects
-        </Link>
-      </a>
-      <a className="navbar-item">
-        <Link
-          to="/Resume"
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Resume' ? 'navbar-link is-active' : 'navbar-link'}
-        >
-          Resumé
-        </Link>
-      </a>
-      <a className="navbar-item">
-        <Link
-          to="/Contact"
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Contact' ? 'navbar-link is-active' : 'navbar-link'}
-        >
-          Contact Me
-        </Link>
-      </a>
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a role="button" className={`navbar-burger ${isActive ? 'is-active' : ''}`} aria-label="menu"  aria-expanded="false" data-target="navMenu"  onClick={toggleMenu}  >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navMenu" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+        <div className="navbar-end">
+          <Link to="/" className={currentPage === '/' ? 'navbar-item is-active' : 'navbar-item'}>About Me</Link>
+          <Link to="/Blog" className={currentPage === '/Blog' ? 'navbar-item is-active' : 'navbar-item'}>Tech Blog</Link>
+          <Link to="/Projects" className={currentPage === '/Projects' ? 'navbar-item is-active' : 'navbar-item'}>Projects</Link>
+          <Link to="/Resume" className={currentPage === '/Resume' ? 'navbar-item is-active' : 'navbar-item'}>Resumé</Link>
+          <Link to="/Contact" className={currentPage === '/Contact' ? 'navbar-item is-active' : 'navbar-item'}>Contact Me</Link>
+        </div>
+      </div>
     </nav>
   );
 }

@@ -1,31 +1,34 @@
 import Contact from '../models/Contact.mjs';
 
-export async function submitContactForm(req, res) {
+// Create a new contact
+export async function createContact(req, res) {
   try {
-    const { first, last, email, message } = req.body;
+    const { first, last, email, inquiry, message } = req.body;
 
     // Create a new contact entry
-    const newContact = await Contact.create({ first, last, email, message });
+    const newContact = await Contact.create({ first, last, email, inquiry, message }, { runValidators: true, new: true });
 
-    res.status(201).json(newContact);
+    res.status(201).json({ success: true, data: newContact });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 }
 
+// Retrieve all contacts
 export async function getAllContacts(req, res) {
   try {
     // Retrieve all contacts
     const contacts = await Contact.find();
 
-    res.status(200).json(contacts);
+    res.status(200).json({ success: true, data: contacts });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 }
 
+// Retrieve a single contact by ID
 export async function getContactById(req, res) {
   try {
     const contactId = req.params.contactId;
@@ -34,16 +37,17 @@ export async function getContactById(req, res) {
     const contact = await Contact.findById(contactId);
 
     if (!contact) {
-      return res.status(404).json({ message: 'Contact not found' });
+      return res.status(404).json({ success: false, message: 'Contact not found' });
     }
 
-    res.status(200).json(contact);
+    res.status(200).json({ success: true, data: contact });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 }
 
+// Update a contact by ID
 export async function updateContactById(req, res) {
   try {
     const contactId = req.params.contactId;
@@ -53,16 +57,17 @@ export async function updateContactById(req, res) {
     const updatedContact = await Contact.findByIdAndUpdate(contactId, updateData, { new: true });
 
     if (!updatedContact) {
-      return res.status(404).json({ message: 'Contact not found' });
+      return res.status(404).json({ success: false, message: 'Contact not found' });
     }
 
-    res.status(200).json(updatedContact);
+    res.status(200).json({ success: true, data: updatedContact });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 }
 
+// Delete a contact by ID
 export async function deleteContactById(req, res) {
   try {
     const contactId = req.params.contactId;
@@ -71,12 +76,12 @@ export async function deleteContactById(req, res) {
     const deletedContact = await Contact.findByIdAndDelete(contactId);
 
     if (!deletedContact) {
-      return res.status(404).json({ message: 'Contact not found' });
+      return res.status(404).json({ success: false, message: 'Contact not found' });
     }
 
-    res.status(200).json({ message: 'Contact deleted successfully' });
+    res.status(200).json({ success: true, message: 'Contact deleted successfully' });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 }

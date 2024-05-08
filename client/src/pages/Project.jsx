@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
-class Project extends Component {}
+function Project() {
+    return (
+        <div className="container">
+            
+        </div>
+    )
+}
 
 export default Project;

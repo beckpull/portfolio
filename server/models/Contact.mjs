@@ -2,15 +2,13 @@ import { Schema, model } from 'mongoose';
 
 const contactSchema = new Schema(
   {
-    first: {
+    firstName: {
       type: String,
-      unique: true,
       required: [true, "first name required"],
       trim: true
     },
-    last: {
+    lastName: {
       type: String,
-      unique: true,
       required: [true, "last name required"],
       trim: true
     },
@@ -20,9 +18,12 @@ const contactSchema = new Schema(
       required: [true, "email required"],
       unique: true
     },
+    inquiry: {
+      type: String,
+    },
     message: {
       type: String,
-      required: [true, "message required"],
+      // required: [true, "message required"],
       trim: true
     },
   },

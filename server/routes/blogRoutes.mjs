@@ -1,6 +1,6 @@
 import express from 'express';
 import { 
-  createBlogPost,
+  // createBlogPost,
   getAllBlogPosts,
   getBlogPostById,
   updateBlogPost,
@@ -9,7 +9,7 @@ import {
 
 const router = express.Router();
 
-router.route('/').get(getAllBlogPosts).post(createBlogPost);
+router.route('/').get(getAllBlogPosts)//.post(createBlogPost);
 router.route('/:postId').get(getBlogPostById).put(updateBlogPost).delete(deleteBlogPost);
 
 router.use((req, res) => {

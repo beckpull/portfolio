@@ -9,7 +9,7 @@ import './index.css'
 import App from './App';
 import Error from './pages/Error';
 import Home from './pages/Home';
-import Contact from './pages/ContactForm';
+import Contact from './pages/Contact';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Project from './pages/Project';
