@@ -95,11 +95,11 @@ function Project() {
       description: "In the journey of becoming a proficient developer, mastering algorithms is paramount. This repository is my dedicated space for practicing a variety of algorithmic problems, honing my problem-solving abilities, and exploring different algorithmic techniques.",
       technologies: ["JavaScript"],
       features: [
-      "Personalized Learning: I've curated a selection of algorithmic problems that align with my learning goals and areas of interest, ensuring that each problem contributes to my growth as a developer.",
-      "In-depth Solutions: For each problem, I provide detailed solutions implemented in various programming languages, allowing me to explore different approaches and learn from best practices.",
-      "Structured Organization: Problems are organized and tagged based on their topics and difficulty levels, enabling me to focus on specific areas or challenge myself with more advanced problems.",
-      "Continuous Improvement: As I progress in my algorithmic journey, I regularly revisit and revise my solutions, striving to optimize them and deepen my understanding of the underlying concepts."
-    ],
+        "Personalized Learning: I've curated a selection of algorithmic problems that align with my learning goals and areas of interest, ensuring that each problem contributes to my growth as a developer.",
+        "In-depth Solutions: For each problem, I provide detailed solutions implemented in various programming languages, allowing me to explore different approaches and learn from best practices.",
+        "Structured Organization: Problems are organized and tagged based on their topics and difficulty levels, enabling me to focus on specific areas or challenge myself with more advanced problems.",
+        "Continuous Improvement: As I progress in my algorithmic journey, I regularly revisit and revise my solutions, striving to optimize them and deepen my understanding of the underlying concepts."
+      ],
       image: "",
       video: "",
       github: "https://github.com/beckpull/algo-practice",
