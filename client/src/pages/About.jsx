@@ -6,10 +6,10 @@ class About extends Component {
       <>
         <br />
         <div className="my-6">
-          <p className="subtitle is-2">About Me</p>
+          <span className="subtitle is-2">About Me: </span>
         </div>
         <br />
-        <p className="is-size-5">Welcome, and thank you for visiting my portfolio! With a rich tapestry of experiences ranging from aviation management to software engineering, I bring a versatile skill set and a passion for excellence to every endeavor.</p>
+        <p className="is-size-5">Welcome! My name is <strong><i>Beck</i></strong> - thank you for visiting my portfolio! With a rich tapestry of experiences ranging from aviation management to software engineering, I bring a versatile skill set and a passion for excellence to every endeavor.</p>
         <br />
         <p className="is-size-5">In my tenure as a staff supervisor at Avflight Corporation, I orchestrated the smooth operation of the KDRO location, overseeing a dedicated team of 10-15 professionals. From managing inventories to nurturing customer relationships, my leadership ensured that every aspect of our operations ran seamlessly. By prioritizing exceptional service and maintaining meticulous attention to detail, I not only contributed to cultivating a loyal customer base but also upheld stringent safety standards, ensuring that all aircraft were serviced promptly and efficiently.</p>
         <br />

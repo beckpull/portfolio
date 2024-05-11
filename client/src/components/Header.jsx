@@ -1,10 +1,10 @@
 import React from 'react';
 import Nav from './NavTabs';
+import '../styles/Header.css'
 
 function Header() {
     return (
         <header>
-            <img src="#" alt="logo"></img>
             <Nav />
         </header>
     )

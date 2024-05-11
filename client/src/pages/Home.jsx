@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import About from './About';
 import '../styles/Home.css'
 
-class Home extends Component {
-  render() {
-    return (
+function Home() {
+  return (
     <>
       <div className="container my-6 has-text-centered">
         <h1 className="title is-1 mt-6">Welcome!</h1>
@@ -15,6 +14,6 @@ class Home extends Component {
       </div>
     </>
     );
-  }
 }
+
 export default Home;

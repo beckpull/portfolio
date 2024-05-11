@@ -1,10 +1,12 @@
 import React from 'react';
 
-function eachProject(props) {
-    const { title, description, technologies, features, image } = props;
+function EachProject(props) {
+    const { title, description, technologies, features, image, video, github, deployed } = props;
     return (
         <div className="container">
-        
+
         </div>
     )
 }
+
+export default EachProject;

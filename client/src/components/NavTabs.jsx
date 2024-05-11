@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import img from '../assets/logo.png';
 import '../styles/Navbar.css';
 
 function NavTabs() {
@@ -12,8 +13,9 @@ function NavTabs() {
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
+      <img src={img} alt="logo" className='logo navbar-start'></img>
       <div className="navbar-brand">
-        <a role="button" className={`navbar-burger ${isActive ? 'is-active' : ''}`} aria-label="menu"  aria-expanded="false" data-target="navMenu"  onClick={toggleMenu}  >
+        <a role="button" className={`navbar-burger ${isActive ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navMenu" onClick={toggleMenu}  >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
