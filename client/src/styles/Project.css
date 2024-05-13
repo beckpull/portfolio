@@ -1,0 +1,12 @@
+img {
+    height: 10em; /* Set the height to 10em */
+    width: 50rem; /* Set the width to 80vw (80% of the viewport width) */
+    object-fit: cover; /* Crop the image to cover the container */
+    object-position: top; /* Align the image to the top */
+    transition: transform 0.3s ease; /* Add transition effect on hover */
+}
+
+/* Add hover effect */
+img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}

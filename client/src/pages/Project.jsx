@@ -109,6 +109,8 @@ function Project() {
 
   return (
     <div className="projects-container">
+    <h2 className='subtitle is-2'>Here are a few of my recent works:</h2>
+      <br />
       {projects.map((project) => (
         <div className="container" key={project.id}>
           <EachProject title={project.title} description={project.description} technologies={project.technologies} features={project.features} image={project.image} video={project.video} github={project.github} deployed={project.deployed} />

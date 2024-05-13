@@ -51,9 +51,7 @@ class ContactForm extends Component {
             <label className="label">Email</label>
             <div className="control has-icons-left">
               <input name="email" value={this.state.email} className="input" type="email" placeholder="e.g. email@example.com" onChange={this.handleChange} />
-              <span className="icon is-small is-left">
-                <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/new-post.png" alt="new-post" />
-              </span>
+              <span className="icon is-small is-left fa fa-envelope"></span>
             </div>
           </div>
 
