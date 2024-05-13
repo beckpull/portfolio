@@ -29,8 +29,8 @@ function EachProject(props) {
       </ol>
       <br />
       <button><a href={github} className='button'>Github Link</a></button>
-      <button><a href={video} className='button'>Video Link</a></button>
-      <button><a href={deployed} className='button'>Deployed Link</a></button>
+      { video ? <button><a href={video} className='button'>Video Link</a></button> : ""}
+      { deployed ? <button><a href={deployed} className='button'>Deployed Link</a></button> : ""}
       <br />
       <br />
       <br />
