@@ -6,14 +6,19 @@ function Home() {
   return (
     <>
       <div className="container my-6 has-text-centered">
-        <h1 className="title is-1 mt-6">Welcome!</h1>
-        <h3 className="subtitle is-6"><i>☀️ thanks for stopping by! ☀️</i></h3>
+        <h3 className="subtitle is-4 mt-6"><i>☀️ Welcome! ☀️</i></h3>
       </div>
+
+      <div className="img-container">
+        <img src="./logo.png" id="about-logo"></img>
+          <span className="subtitle is-2 about-me">About Me</span>
+      </div>
+
       <div className="container">
         <About />
       </div>
     </>
-    );
+  );
 }
 
 export default Home;

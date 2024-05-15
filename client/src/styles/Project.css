@@ -10,3 +10,7 @@ img {
 img:hover {
     transform: scale(1.1); /* Scale the image on hover */
 }
+
+.projects-container {
+    margin-left: 2.3vw;
+}

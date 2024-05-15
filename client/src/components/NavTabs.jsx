@@ -13,8 +13,9 @@ function NavTabs() {
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
-      <img src={img} alt="logo" className='logo navbar-start'></img>
       <div className="navbar-brand">
+      <img src={img} alt="logo" className='logo navbar-start' id="navbar-logo"></img>
+
         <a role="button" className={`navbar-burger ${isActive ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navMenu" onClick={toggleMenu}  >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>

@@ -1,0 +1,21 @@
+#about-logo {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start of the flex container (left edge) */
+}
+
+@media screen and (max-width: 768px) {
+  #about-logo {
+      height: auto; /* Set the width to auto for screens narrower than 768px */
+      max-width: 40%; /* Ensure the image doesn't exceed its container */
+  }
+  .about-me {
+    margin-left: .7rem;
+  }
+}
