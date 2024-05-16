@@ -159,16 +159,16 @@ _To get a local copy up and running follow these simple example steps:_
     </br>
     <a href="https://beckpull.com">
     <p>My About Me, Resumé, Projects pages</p>
-      <img src="./readme-imgs/about-me.png" width="472">
-      <img src="./readme-imgs/projects.png" width="400">
-      <img src="./readme-imgs/resume.png" width="406">
+      <img src="./readme-imgs/about-me.png" width="236">
+      <img src="./readme-imgs/projects.png" width="200">
+      <img src="./readme-imgs/resume.png" width="203">
     </a>
     </br></br>
     <a href="https://beckpull.com">
       <p>My Contact Form page functionality</p>
-      <img src="./readme-imgs/contact-blank.png" width="644">
-      <img src="./readme-imgs/contact-email.png" width="650">
-      <img src="./readme-imgs/contact-fields.png" width="583">
+      <img src="./readme-imgs/contact-blank.png" width="264">
+      <img src="./readme-imgs/contact-email.png" width="267">
+      <img src="./readme-imgs/contact-fields.png" width="239">
     </a>
     </br></br>
   </br></br>
