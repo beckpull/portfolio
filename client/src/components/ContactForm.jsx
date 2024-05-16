@@ -79,6 +79,8 @@ export default function ContactForm() {
     } else if (!emailValid) {
       return; // Exit the function if email is invalid
     }
+    setSubmitted(true);
+    document.querySelector('#success-modal').classList.add('is-active');
 
     try {
       const response = await axios.post('http://localhost:3000/api/contacts', {
@@ -99,8 +101,8 @@ export default function ContactForm() {
       setInquiry('Recruiter');
       setMessage('');
 
-      sendEmail(email, 'Thank you for reaching out to me!', 'This email is to confirm that I have received your message and if requested, I will respond shortly! I hope you have a wonderful day 🌻');
-      sendEmail('beckpull@icloud.com', 'Response received from beckpull.com', `Name: ${fullName} Email: ${email} Inquiry Type: ${inquiry} Message: ${message}`);
+      // sendEmail(email, 'Thank you for reaching out to me!', 'This email is to confirm that I have received your message and if requested, I will respond shortly! I hope you have a wonderful day 🌻');
+      // sendEmail('beckpull@icloud.com', 'Response received from beckpull.com', `Name: ${fullName} Email: ${email} Inquiry Type: ${inquiry} Message: ${message}`);
 
 
     } catch (error) {
