@@ -27,7 +27,7 @@ function Resume() {
     <br />
     <br />
     <br />
-    <h2 className='subtitle is-3'>My Prior Work Experience:</h2>
+    <h2 className='subtitle is-3'>Prior Work Experience:</h2>
     <br />
     <br />
     <br />
