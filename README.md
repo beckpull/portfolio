@@ -21,7 +21,7 @@
     <a href="https://github.com/beckpull/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://beckpull.com">View Webpage</a>
+    <a href="https://www.beckpull.com">View Webpage</a>
     ·
     <a href="https://github.com/beckpull/portfolio/issues">Report Bug</a>
     ·
@@ -64,28 +64,28 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+### Overview:
 
-Overview:
-The React Portfolio project is a comprehensive showcase of my work, skills, and achievements, crafted with the latest web technologies. It provides a professional online presence for users to explore my portfolio and learn more about my capabilities.
+This React Portfolio project is a comprehensive showcase of my work, skills, and achievements, crafted with the latest web technologies. It provides a professional online presence for users to explore my portfolio and learn more about my capabilities.
 
-Key Features:
+### Key Features:
 
-Responsive Design: Ensures optimal viewing experience across various devices and screen sizes.
-Interactive Interface: Engages users with intuitive navigation and interactive elements.
-Project Showcase: Highlights my projects, including descriptions, technologies used, and links to live demos or repositories.
-Skills Section: Showcases my technical skills and proficiencies relevant to web development.
-About Me Page: Provides insight into my background, experience, and interests.
-Contact Form: Enables visitors to reach out to me directly for inquiries or collaborations.
-Technologies Used:
+- **Responsive Design**: Ensures optimal viewing experience across various devices and screen sizes.
+- **Interactive Interface**: Engages users with intuitive navigation and interactive elements.
+- **Project Showcase**: Highlights my projects, including descriptions, technologies used, and links to live demos or repositories.
+- **Skills Section**: Showcases my technical skills and proficiencies relevant to web development.
+- **About Me Page**: Provides insight into my background, experience, and interests.
+- **Contact Form**: Enables visitors to reach out to me directly for inquiries or collaborations.
 
-Frontend: React.js, HTML, CSS
-Backend: (Optional, if applicable)
-Deployment: (Hosting platform, e.g., Netlify, Vercel)
-Goals:
+### Technologies Used:
+
+- **Frontend**: React.js, HTML, CSS
+- **Backend**: MongoDB, Mongoose, Apollo Server (in progress)
+- **Deployment**: Netlify
+
+### Goals:
+
 The primary goal of the React Portfolio project is to create a professional and visually appealing platform to showcase my work and skills to potential employers, clients, and collaborators. It aims to demonstrate my proficiency in web development while providing an interactive and informative experience for visitors.
-**Key Features**:
-
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,26 +94,27 @@ The primary goal of the React Portfolio project is to create a professional and 
 
 ### Built With
 
-<!-- * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![NodeJS]
+* ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 * ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 * ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 * ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
 * ![Mongoose](https://img.shields.io/badge/Mongoose•odm-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
-* ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
-* ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
-* ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+* ![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white)
+* ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio logoColor=white)
+* ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 * ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) -->
+* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
+<!-- ## Getting Started -->
 
-<p align="center"><i><strong>✨ Everything you need to know ✨</strong></i></p>
 
 <!-- ### Prerequisites
 
@@ -143,41 +144,38 @@ _To get a local copy up and running follow these simple example steps:_
    npm start
    ``` -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
 ## Usage 
 </br></br>
+<p align="center"><i><strong>✨ Everything you need to know ✨</strong></i></p>
 
 <div align="center"> 
-  <img src="./assets/qr.png" width="200" alt="qr code for demo video">
+  <img src="./readme-imgs/qr.png" width="200" alt="qqr code to webpage">
   </br>
   </br>
-  <strong><i>Scan the QR code above or click <strong><a href="#">HERE</a></strong> to view this deployed site on Netlify!</strong>
+  <strong><i>Scan the QR code above or click <strong><a href="https://www.beckpull.com">HERE</a></strong> to view this deployed site on Netlify!</strong>
     </br>
     </br>
     </br>
-    <!-- <a href="https://github.com/beckpull/portfolio">
-    <p>/api/users</p>
-      <img src="./assets/users1.png" width="300">
-      <img src="./assets/users2.png" width="300">
-      <img src="./assets/users3.png" width="523">
+    <!-- <a href="https://beckpull.com">
+      <img src="./readme-imgs/users1.png" width="300">
+      <img src="./readme-imgs/users2.png" width="300">
+      <img src="./readme-imgs/users3.png" width="523">
     </a>
     </br></br>
-    <a href="https://github.com/beckpull/portfolio">
-      <p>/api/users/:userId/friends/:friendId</p>
-      <img src="./assets/friendsPOST.png" width="605">
-      <img src="./assets/friendsDELETE.png" width="647">
+    <a href="https://beckpull.com"">
+      <img src="./readme-imgs/friendsPOST.png" width="605">
+      <img src="./readme-imgs/friendsDELETE.png" width="647">
     </a>
     </br></br>
-    <a href="https://github.com/beckpull/portfolio">
-      <p>/api/thoughts</p>
-      <img src="./assets/thoughts.png" width="700">
+    <a href="https://beckpull.com"">
+      <img src="./readme-imgs/thoughts.png" width="700">
     </a>
-    <a href="https://github.com/beckpull/portfolio">
-      <p>/api/thoughts/:thoughtId/</p>
-      <img src="./assets/singleThought.png" width="700">
-      <img src="./assets/singleThought2.png" width="500">
+    <a href="https://beckpull.com"">
+      <img src="./readme-imgs/singleThought.png" width="700">
+      <img src="./readme-imgs/singleThought2.png" width="500">
     </a> -->
   </br></br>
 </div>
@@ -187,7 +185,7 @@ _To get a local copy up and running follow these simple example steps:_
 <!-- ROADMAP -->
 ## Roadmap
 
-<img src="./assets/roadmap.png">
+<img src="./readme-imgs/roadmap.png">
 <div align="right">
   <p><i>This was my roadmap for this project</i></p>
 </div>
@@ -254,7 +252,7 @@ See the [open issues](https://github.com/beckpull/portfolio/issues) for a full l
 <!-- CONTACT -->
 ## Contact
 
-**Rebecca Feltman** - [Email me](mailto:beckpull@icloud.com) - or check me out on [GitHub!](https://github.com/beckpull) 
+**Rebecca Feltman** - [Email me](mailto:beckpull@icloud.com) - or check me out on [GitHub](https://github.com/beckpull) or [LinkedIn!](https://linkedin/in/beckpull)
 
 >Repository Link: [https://github.com/beckpull/portfolio](https://github.com/beckpull/portfolio)
 
