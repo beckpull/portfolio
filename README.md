@@ -12,8 +12,6 @@
 <div align="center">
   <a href="https://github.com/beckpull/portfolio">
 
-
-
 <h1 align="center">My Portfolio</h1>
 
   <p align="center">React Portfolio Repository—A comprehensive showcase of my work, skills, and achievements. Harnessing the capabilities of React to create an engaging and professional online presence.
@@ -62,6 +60,7 @@
 </br>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 ### Overview:
@@ -87,44 +86,40 @@ This React Portfolio project is a comprehensive showcase of my work, skills, and
 
 The primary goal of the React Portfolio project is to create a professional and visually appealing platform to showcase my work and skills to potential employers, clients, and collaborators. It aims to demonstrate my proficiency in web development while providing an interactive and informative experience for visitors.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-* ![NodeJS]
-* ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-* ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
-* ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-* ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-* ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
-* ![Mongoose](https://img.shields.io/badge/Mongoose•odm-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
-* ![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white)
-* ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio logoColor=white)
-* ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
-* ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-* ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![NodeJS]
+- ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+- ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
+- ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+- ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
+- ![Mongoose](https://img.shields.io/badge/Mongoose•odm-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
+- ![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white)
+- ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio logoColor=white)
+- ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+- ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+- ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 <!-- ## Getting Started -->
 
-
 <!-- ### Prerequisites
 
 _This application has several dependencies, to install individually onto your machine, navigate to the directory this code lives in and type these commands into your Terminal / Git Bash:_ -->
-  ```sh
+
+```sh
 #   npm i express
 #   npm i mongodb
 #   npm i mongoose
 #   npm i nodemon --save-dev
-  ```
+```
 
 <!-- ### Installation
 
@@ -147,8 +142,11 @@ _To get a local copy up and running follow these simple example steps:_
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
-## Usage 
+
+## Usage
+
 </br></br>
+
 <p align="center"><i><strong>✨ Everything you need to know ✨</strong></i></p>
 
 <div align="center"> 
@@ -159,30 +157,27 @@ _To get a local copy up and running follow these simple example steps:_
     </br>
     </br>
     </br>
-    <!-- <a href="https://beckpull.com">
-      <img src="./readme-imgs/users1.png" width="300">
-      <img src="./readme-imgs/users2.png" width="300">
-      <img src="./readme-imgs/users3.png" width="523">
+    <a href="https://beckpull.com">
+    <p>My About Me, Resumé, Projects pages</p>
+      <img src="./readme-imgs/about-me.png" width="472">
+      <img src="./readme-imgs/projects.png" width="400">
+      <img src="./readme-imgs/resume.png" width="406">
     </a>
     </br></br>
-    <a href="https://beckpull.com"">
-      <img src="./readme-imgs/friendsPOST.png" width="605">
-      <img src="./readme-imgs/friendsDELETE.png" width="647">
+    <a href="https://beckpull.com">
+      <p>My Contact Form page functionality</p>
+      <img src="./readme-imgs/contact-blank.png" width="644">
+      <img src="./readme-imgs/contact-email.png" width="650">
+      <img src="./readme-imgs/contact-fields.png" width="583">
     </a>
     </br></br>
-    <a href="https://beckpull.com"">
-      <img src="./readme-imgs/thoughts.png" width="700">
-    </a>
-    <a href="https://beckpull.com"">
-      <img src="./readme-imgs/singleThought.png" width="700">
-      <img src="./readme-imgs/singleThought2.png" width="500">
-    </a> -->
   </br></br>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 <img src="./readme-imgs/roadmap.png">
@@ -224,6 +219,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**!
@@ -242,6 +238,7 @@ See the [open issues](https://github.com/beckpull/portfolio/issues) for a full l
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 <p align='center'>Distributed under the MIT License. See `LICENSE.txt` for more information.</p>
@@ -250,30 +247,32 @@ See the [open issues](https://github.com/beckpull/portfolio/issues) for a full l
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contact
 
 **Rebecca Feltman** - [Email me](mailto:beckpull@icloud.com) - or check me out on [GitHub](https://github.com/beckpull) or [LinkedIn!](https://linkedin/in/beckpull)
 
->Repository Link: [https://github.com/beckpull/portfolio](https://github.com/beckpull/portfolio)
-
+> Repository Link: [https://github.com/beckpull/portfolio](https://github.com/beckpull/portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* This README file template was created by [@othneildrew](https://github.com/othneildrew) - the original can be found [here](https://github.com/othneildrew/Best-README-Template)
+- This README file template was created by [@othneildrew](https://github.com/othneildrew) - the original can be found [here](https://github.com/othneildrew/Best-README-Template)
 
+#### Disclaimer:
 
-#### Disclaimer: 
-> I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs, as well as many classwork example code from the University of Denver **as references** for the javascript code attached. 
+> I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs, as well as many classwork example code from the University of Denver **as references** for the javascript code attached.
 >
-**All of the utilized information has been altered in order to fit this project. This repository contains _solely_ my own work.** 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+> **All of the utilized information has been altered in order to fit this project. This repository contains _solely_ my own work.**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/beckpull/portfolio.svg?style=for-the-badge
 [contributors-url]: https://github.com/beckpull/portfolio/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/beckpull/portfolio.svg?style=for-the-badge
@@ -288,7 +287,7 @@ See the [open issues](https://github.com/beckpull/portfolio/issues) for a full l
 [NodeJS]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
 [Bulma]: https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white
 [linkedin-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://linkedin.com/in/beckpull/
