@@ -10,7 +10,36 @@ img {
 img:hover {
     transform: scale(1.1); /* Scale the image on hover */
 }
-
 .projects-container {
-    margin-left: 2.3vw;
-}
+    padding: 20px;
+    margin-left: 2.3vw
+  }
+  
+  .project-summary {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Set a consistent height for all project summaries */
+  }
+  
+  .project-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    max-height: 200px; /* Ensure the image fits within the project-summary */
+    object-fit: cover; /* Ensure the image scales properly */
+  }
+  
+  .project-title {
+    margin-top: 10px;
+    flex-shrink: 0; /* Prevent the title from shrinking */
+  }
+  
