@@ -13,7 +13,7 @@ function ProjectDetail() {
   return (
     <div className="container">
       <h2 className='subtitle is-3'>{project.title}</h2>
-      <img src={project.image} alt="project photo" />
+      <img className='mt-6 mb-6' src={`../${project.image}`} alt="project photo" />
       <br />
       <p>{project.description}</p>
       <br />

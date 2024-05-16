@@ -36,7 +36,7 @@ const projects = [
     },
     {
       id: 3,
-      title: "Just Another Text Editor: A Progressive Web Appplication",
+      title: "Just Another Text Editor: A Progressive Web Application",
       description: "Express PWA repository—a cutting-edge text editor application leveraging the power of Progressive Web App technology.",
       technologies: ["MongoDB", "Webpack", "Web App Manifest", "JavaScript/Node.js", "Nodemon", "Postman"],
       features: [
@@ -52,8 +52,8 @@ const projects = [
     },
     {
       id: 4,
-      title: "TechBlog: A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers' posts as well",
-      description: "TechBlog is a content management system (CMS) inspired by popular blogging platforms like WordPress, designed specifically for tech enthusiasts. With TechBlog, users can create an account, publish posts on various tech topics, engage in discussions through comments, and explore a vibrant community of like-minded individuals.",
+      title: "TechBlog",
+      description: "A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers' posts as well. TechBlog is a content management system (CMS) inspired by popular blogging platforms like WordPress, designed specifically for tech enthusiasts. With TechBlog, users can create an account, publish posts on various tech topics, engage in discussions through comments, and explore a vibrant community of like-minded individuals.",
       technologies: ["JavaScript/Node.js", "Express.js", "PostgreSQL", "Sequelize"],
       features: [
         "User Authentication: Secure user authentication system allowing users to create accounts and log in securely.",
