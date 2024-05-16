@@ -31,7 +31,7 @@ function Resume() {
     <br />
     <br />
     <br />
-    <h3 className='subtitle is-4'>Brief overview of my more recent responsiblities & achievements...</h3>
+    <h3 className='subtitle is-4'>Brief overview of my more recent responsiblities & achievements ...</h3>
     <br />
     <br />
     <ul>
@@ -43,7 +43,7 @@ function Resume() {
     <br />
     <br />
     <br />
-    <h3 className='subtitle is-3'>...Broken down in more detail</h3>
+    <h3 className='subtitle is-3'>... Broken down in more detail</h3>
     <br />
     <br />
       {jobXP.map((xp, index) => (
