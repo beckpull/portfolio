@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import img from '../assets/logo.png';
 import '../styles/Navbar.css';
@@ -10,6 +10,32 @@ function NavTabs() {
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
+
+
+  useEffect(() => {
+    let pageTitle = '';
+    switch (currentPage) {
+      case '/':
+        pageTitle = 'About Me';
+        break;
+      case '/Blog':
+        pageTitle = 'Tech Blog';
+        break;
+      case '/Projects':
+        pageTitle = 'Portfolio';
+        break;
+      case '/Resume':
+        pageTitle = 'Resumé';
+        break;
+      case '/Contact':
+        pageTitle = 'Contact Me';
+        break;
+      default:
+        pageTitle = 'Beck\'s Domain';
+        break;
+    }
+    document.title = `${pageTitle} | Beck's Domain`;
+  }, [currentPage]);
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
