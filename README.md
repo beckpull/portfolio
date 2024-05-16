@@ -114,12 +114,12 @@ The primary goal of the React Portfolio project is to create a professional and 
 
 _This application has several dependencies, to install individually onto your machine, navigate to the directory this code lives in and type these commands into your Terminal / Git Bash:_ -->
 
-```sh
+<!-- ```sh
 #   npm i express
 #   npm i mongodb
 #   npm i mongoose
 #   npm i nodemon --save-dev
-```
+``` -->
 
 <!-- ### Installation
 
