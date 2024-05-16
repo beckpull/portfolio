@@ -14,8 +14,8 @@ function EachXP(props) {
       <br />
       <p>Duties:</p>
       <ul>
-        {duties.map((duty) => (
-          <li>• {duty}</li>
+        {duties.map((duty, index) => (
+          <li key={index}>• {duty}</li>
         ))}
       </ul>
       <br />

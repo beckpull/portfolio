@@ -3,11 +3,13 @@ import Contact from '../models/Contact.mjs';
 // Create a new contact
 export async function createContact(req, res) {
   try {
-    const { first, last, email, inquiry, message } = req.body;
+    console.log(req.body);
+    const { fullName, email, inquiry, message } = req.body;
 
     // Create a new contact entry
-    const newContact = await Contact.create({ first, last, email, inquiry, message }, { runValidators: true, new: true });
-
+    const newContact = await Contact.create({ fullName, email, inquiry, message }, { new: true });
+    console.log(newContact);
+    
     res.status(201).json({ success: true, data: newContact });
   } catch (err) {
     console.error(err);

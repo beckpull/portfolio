@@ -10,7 +10,7 @@ function Home() {
       </div>
 
       <div className="img-container">
-        <img src="./logo.png" id="about-logo"></img>
+        <img src="./beck-img.png" id="about-logo"></img>
           <span className="subtitle is-2 about-me">About Me</span>
       </div>
 

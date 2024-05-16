@@ -1,11 +1,45 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
+// import nodemailer from 'nodemailer';
+
+// // Create a transporter object using SMTP
+// const transporter = nodemailer.createTransport({
+//   service: 'gmail',
+
+//   auth: {
+//     user: process.env.EMAIL_USER,
+//     pass: process.env.EMAIL_PASS
+//   }
+// });
+
+// // Function to send an email
+// const sendEmail = async (to, subject, text) => {
+//   try {
+//     const info = await transporter.sendMail({
+//       from: 'beckpull7@gmail.com',
+//       to: to,
+//       subject: subject,
+//       text: text
+//     });
+//     console.log('Email sent:', info.response);
+//   } catch (error) {
+//     console.error('Error sending email:', error);
+//   }
+// };
+
+// Example usage
+
+
 export default function ContactForm() {
   let [fullName, setFullName] = useState('');
   let [email, setEmail] = useState('');
   let [inquiry, setInquiry] = useState('Recruiter');
   let [message, setMessage] = useState('');
+  let [submitted, setSubmitted] = useState(false);
+  let [emailValid, setEmailValid] = useState(true);
+  let [fieldsCompleted, setFieldsCompleted] = useState(true);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -16,6 +50,7 @@ export default function ContactForm() {
         break;
       case 'email':
         setEmail(value);
+        setEmailValid(validateEmail(value)); // Validate email
         break;
       case 'inquiry':
         setInquiry(value);
@@ -28,25 +63,46 @@ export default function ContactForm() {
     }
   };
 
+  const validateEmail = (email) => {
+    // Regular expression for email validation
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    if (!fullName || !email || !message) {
+      setFieldsCompleted(false);
+      return; // Exit the function if any field is empty
+    } else if (!emailValid) {
+      return; // Exit the function if email is invalid
+    }
+
     try {
       const response = await axios.post('http://localhost:3000/api/contacts', {
-        fullName,
-        email,
-        inquiry,
-        message
+        fullName: fullName,
+        email: email,
+        inquiry: inquiry,
+        message: message
       });
+      setSubmitted(true);
+
+      document.querySelector('#success-modal').classList.add('is-active');
 
       // Handle successful response here, such as displaying a success message
-      console.log('Contact form submitted successfully!', response.data);
+      console.log('Contact form submitted successfully!', `submitted: ${submitted}`, response.data);
 
-      // Optionally, reset the form fields after successful submission
       setFullName('');
       setEmail('');
       setInquiry('Recruiter');
       setMessage('');
+
+      sendEmail(email, 'Thank you for reaching out to me!', 'This email is to confirm that I have received your message and if requested, I will respond shortly! I hope you have a wonderful day 🌻');
+      sendEmail('beckpull@icloud.com', 'Response received from beckpull.com', `Name: ${fullName} Email: ${email} Inquiry Type: ${inquiry} Message: ${message}`);
+
+
     } catch (error) {
       // Handle error
       console.error('Error submitting contact form:', error);
@@ -60,7 +116,33 @@ export default function ContactForm() {
 
   return (
     <>
-<form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true">
+      {/* Notification for incomplete fields */}
+      {!fieldsCompleted && (
+        <div className="notification is-warning">
+          Please fill out all required fields.
+        </div>
+      )}
+
+      {/* Notification for invalid email */}
+      {!emailValid && (
+        <div className="notification is-danger">
+          Please enter a valid email address.
+        </div>
+      )}
+      <div className="modal" id="success-modal">
+        <div className="modal-background"></div>
+        <div className="modal-card">
+          <header className="modal-card-head">
+            <p className="modal-card-title">Your message has been delivered!</p>
+            <button className="delete" aria-label="close" onClick={() => {
+              setSubmitted(false);
+              window.location.href = '/';
+            }}></button>
+          </header>
+        </div>
+      </div>
+
+      <form name="contact" onSubmit={handleSubmit} data-netlify="true">
         <div className="field">
           <label className="label">Name</label>
           <div className="control">
@@ -108,3 +190,4 @@ export default function ContactForm() {
     </>
   );
 }
+

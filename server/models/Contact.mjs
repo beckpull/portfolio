@@ -4,13 +4,13 @@ const contactSchema = new Schema(
   {
     fullName: {
       type: String,
-      required: [true, "full name required"],
+      // required: [true, "full name required"],
       trim: true
     },
     email: {
       type: String,
       isEmail: true,
-      required: [true, "email required"],
+      // required: [true, "email required"],
     },
     inquiry: {
       type: String,
