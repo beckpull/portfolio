@@ -10,7 +10,7 @@ function Resume() {
     <br />
     <div className='has-text-centered'>
     <h2 className='subtitle is-5'><a href="./resume.pdf">Link to view my Resume</a> • <a href="./resume.pdf" download>Download my Resume</a></h2>
-    <h2 className='subtitle is-4'>Dev proficiencies:</h2>
+    <h2 className='subtitle is-4'>Tech proficiencies thus far:</h2>
     <ul>
       <li>HTML, CSS, CSS Frameworks: Bootstrap, Bulma</li>
       <li>JavaScript, Node.js</li>
