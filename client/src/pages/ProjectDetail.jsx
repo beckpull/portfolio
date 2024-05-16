@@ -1,6 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import projects from '../data/projects'; // Assuming projects data is moved to a separate file
+import projects from '../data/projects';
+import githubIcon from '../assets/github-icon.jpg';
+import videoIcon from '../assets/video-icon.jpg';
+import deployedIcon from '../assets/deployed-icon.jpeg';
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -35,10 +38,23 @@ function ProjectDetail() {
         ))}
       </ol>
       <br />
-      <button><a href={project.github} className='button'>Github Link</a></button>
-      { project.video ? <button><a href={project.video} className='button'>Video Link</a></button> : ""}
-      { project.deployed ? <button><a href={project.deployed} className='button'>Deployed Link</a></button> : ""}
-      <br />
+      <div className="icons-container">
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="GitHub" className="icon mx-3" />
+          </a>
+        )}
+        {project.video && (
+          <a href={project.video} target="_blank" rel="noopener noreferrer">
+            <img src={videoIcon} alt="Video" className="icon mx-3" />
+          </a>
+        )}
+        {project.deployed && (
+          <a href={project.deployed} target="_blank" rel="noopener noreferrer">
+            <img src={deployedIcon} alt="Deployed" className="icon mx-3" />
+          </a>
+        )}
+      </div>      <br />
       <br />
       <br />
       <br />

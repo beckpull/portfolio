@@ -11,7 +11,7 @@ function Project() {
       <div className="columns is-multiline">
         {projects.map((project) => (
           <div className="column is-half" key={project.id}>
-            <EachProject id={project.id} title={project.title} image={project.image} />
+            <EachProject id={project.id} title={project.title} image={project.image} github={project.github} video={project.video} deployed={project.deployed} />
           </div>
         ))}
       </div>
