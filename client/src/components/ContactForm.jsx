@@ -1,45 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-
-// import nodemailer from 'nodemailer';
-
-// // Create a transporter object using SMTP
-// const transporter = nodemailer.createTransport({
-//   service: 'gmail',
-
-//   auth: {
-//     user: process.env.EMAIL_USER,
-//     pass: process.env.EMAIL_PASS
-//   }
-// });
-
-// // Function to send an email
-// const sendEmail = async (to, subject, text) => {
-//   try {
-//     const info = await transporter.sendMail({
-//       from: 'beckpull7@gmail.com',
-//       to: to,
-//       subject: subject,
-//       text: text
-//     });
-//     console.log('Email sent:', info.response);
-//   } catch (error) {
-//     console.error('Error sending email:', error);
-//   }
-// };
-
-// Example usage
-
-
 export default function ContactForm() {
-  let [fullName, setFullName] = useState('');
-  let [email, setEmail] = useState('');
-  let [inquiry, setInquiry] = useState('Recruiter');
-  let [message, setMessage] = useState('');
-  let [submitted, setSubmitted] = useState(false);
-  let [emailValid, setEmailValid] = useState(true);
-  let [fieldsCompleted, setFieldsCompleted] = useState(true);
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [inquiry, setInquiry] = useState('Recruiter');
+  const [message, setMessage] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [emailValid, setEmailValid] = useState(true);
+  const [fieldsCompleted, setFieldsCompleted] = useState(true);
+  const [nameRequired, setNameRequired] = useState(false);
+  const [emailRequired, setEmailRequired] = useState(false);
+  const [messageRequired, setMessageRequired] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -47,16 +19,19 @@ export default function ContactForm() {
     switch (name) {
       case 'fullName':
         setFullName(value);
+        setNameRequired(!value);
         break;
       case 'email':
         setEmail(value);
-        setEmailValid(validateEmail(value)); // Validate email
+        setEmailValid(validateEmail(value));
+        setEmailRequired(!value);
         break;
       case 'inquiry':
         setInquiry(value);
         break;
       case 'message':
         setMessage(value);
+        setMessageRequired(!value);
         break;
       default:
         break;
@@ -69,6 +44,24 @@ export default function ContactForm() {
     return regex.test(email);
   };
 
+  const handleBlur = (event) => {
+    const { name, value } = event.target;
+    if (!value) {
+      switch (name) {
+        case 'fullName':
+          setNameRequired(true);
+          break;
+        case 'email':
+          setEmailRequired(true);
+          break;
+        case 'message':
+          setMessageRequired(true);
+          break;
+        default:
+          break;
+      }
+    }
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -89,9 +82,6 @@ export default function ContactForm() {
         inquiry: inquiry,
         message: message
       });
-      setSubmitted(true);
-
-      document.querySelector('#success-modal').classList.add('is-active');
 
       // Handle successful response here, such as displaying a success message
       console.log('Contact form submitted successfully!', `submitted: ${submitted}`, response.data);
@@ -100,10 +90,6 @@ export default function ContactForm() {
       setEmail('');
       setInquiry('Recruiter');
       setMessage('');
-
-      // sendEmail(email, 'Thank you for reaching out to me!', 'This email is to confirm that I have received your message and if requested, I will respond shortly! I hope you have a wonderful day 🌻');
-      // sendEmail('beckpull@icloud.com', 'Response received from beckpull.com', `Name: ${fullName} Email: ${email} Inquiry Type: ${inquiry} Message: ${message}`);
-
 
     } catch (error) {
       // Handle error
@@ -131,6 +117,24 @@ export default function ContactForm() {
           Please enter a valid email address.
         </div>
       )}
+
+      {/* Notification for required fields */}
+      {nameRequired && (
+        <div className="notification is-warning">
+          Name is required.
+        </div>
+      )}
+      {emailRequired && (
+        <div className="notification is-warning">
+          Email is required.
+        </div>
+      )}
+      {messageRequired && (
+        <div className="notification is-warning">
+          Message is required.
+        </div>
+      )}
+
       <div className="modal" id="success-modal">
         <div className="modal-background"></div>
         <div className="modal-card">
@@ -148,13 +152,29 @@ export default function ContactForm() {
         <div className="field">
           <label className="label">Name</label>
           <div className="control">
-            <input name="fullName" value={fullName} className="input" type="text" placeholder="e.g. Audrey Hepburn" onChange={handleChange} />
+            <input
+              name="fullName"
+              value={fullName}
+              className="input"
+              type="text"
+              placeholder="e.g. Audrey Hepburn"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
           </div>
         </div>
         <div className="field">
           <label className="label">Email</label>
           <div className="control has-icons-left">
-            <input name="email" value={email} className="input" type="email" placeholder="e.g. email@example.com" onChange={handleChange} />
+            <input
+              name="email"
+              value={email}
+              className={`input ${!emailValid ? 'is-danger' : ''}`}
+              type="email"
+              placeholder="e.g. email@example.com"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
             <span className="icon is-small is-left fa fa-envelope"></span>
           </div>
         </div>
@@ -176,7 +196,14 @@ export default function ContactForm() {
         <div className="field">
           <label className="label">Message</label>
           <div className="control">
-            <textarea name="message" className="textarea" placeholder="Optional message" value={message} onChange={handleChange}></textarea>
+            <textarea
+              name="message"
+              className="textarea"
+              placeholder="Optional message"
+              value={message}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            ></textarea>
           </div>
         </div>
 
@@ -192,4 +219,3 @@ export default function ContactForm() {
     </>
   );
 }
-
