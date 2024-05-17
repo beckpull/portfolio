@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import projects from '../data/projects';
 import githubIcon from '../assets/github-icon.jpg';
-import videoIcon from '../assets/video-icon.jpg';
-import deployedIcon from '../assets/deployed-icon.jpeg';
+import videoIcon from '../assets/video1.jpg';
+import deployedIcon from '../assets/deployed1.webp';
 
 function ProjectDetail() {
   const { id } = useParams();

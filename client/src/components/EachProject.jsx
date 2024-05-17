@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import githubIcon from '../assets/github-icon.jpg';
-import videoIcon from '../assets/video-icon.jpg';
-import deployedIcon from '../assets/deployed-icon.jpeg';
+import githubIcon from '../assets/github1.webp';
+import videoIcon from '../assets/video1.jpg';
+import deployedIcon from '../assets/deployed1.webp';
 import '../styles/Project.css';
 
 function EachProject({ id, title, image, github, video, deployed }) {
