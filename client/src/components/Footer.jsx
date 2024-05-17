@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Footer.css'
 import githubIcon from '../assets/github.png';
 import linkedInIcon from '../assets/linkedin.png';
 
