@@ -15,7 +15,7 @@ const projects = [
       image: "./all-recipes-gastronome.png",
       video: "",
       github: "https://github.com/beckpull/gastronome",
-      deployed: "https:gastronome.onrender.com"
+      deployed: "https://gastronome.onrender.com"
     },
     {
       id: 2,
