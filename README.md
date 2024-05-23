@@ -149,7 +149,7 @@ _To get a local copy up and running follow these simple example steps:_
 <p align="center"><i><strong>✨ Everything you need to know ✨</strong></i></p>
 
 <div align="center"> 
-  <img src="./readme-imgs/qr.png" width="200" alt="qqr code to webpage">
+  <img src="./readme-imgs/qr.png" width="200" alt="qr code to webpage">
   </br>
   </br>
   <strong><i>Scan the QR code above or click <strong><a href="https://www.beckpull.com">HERE</a></strong> to view this deployed site on Netlify!</strong>
