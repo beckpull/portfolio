@@ -91,7 +91,7 @@ function ContactForm() {
 
   return (
     <>
-      <div className="modal is-active" id="success-modal">
+      <div className="modal" id="success-modal">
         <div className="modal-background"></div>
         <div className="modal-card has-text-centered">
           <button className="delete" aria-label="close" onClick={() => {
